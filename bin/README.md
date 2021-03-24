@@ -1,30 +1,3 @@
-Using Legacy Systems
-
-1.The purpose of this application is to allow accessing customer data from an old usb connection system
-to a cloud https system for a company.
-
-2.There are two interfaces as provided in the requirement, CustomerDataOverUSB and CustomerDataOverHTTPS.
-These 2 interfaces are not compatible and hence using adapter design pattern works as a bridge between two incompatible interfaces. 
-
-3.There are 2 concrete classes implementing these two interfaces.
-DataImplUsb and DataImplHttps respectively.
-
-4.There is an adapter class, UsbToHttpsAdapter which acts as an adapter.
-i.e., class which is  responsible to handle functionalities of independent or incompatible interfaces.
-
-5.The client (main) makes a request to the adapter (UsbToHttpsAdapter) by calling a method on it using the target interface (CustomerDataOverUSB).
-The adapter translates that request on the adaptee using the adaptee interface.(CustomerDataOverHTTPS)
-Client receive the results of the call and is unaware of adapter’s presence.
-
-6.And hence here client can access customer data using https connection.
-
-Assumptions:
-1.Customer class consists of attributes like id, name, email and phone number, which are considered as customer data.
-2.Methods printCustomer() and getCustomerData() return types are changed to int and Customer type for better usage purpose and junit testing purpose 
-instead of void.
-3.In future customer data can be extended to other attributes or scale.
-4.Junit tests are covered for adapter implementation, 2 concrete classes and also to customer class.
-
 # Project Template
 
 This is a Java Maven Project Template
