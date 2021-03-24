@@ -20,10 +20,15 @@ Client receive the results of the call and is unaware of adapter’s presence.
 
 Assumptions:
 1.Customer class consists of attributes like id, name, email and phone number, which are considered as customer data.
+
 2.Methods printCustomer() and getCustomerData() return types are changed to int and Customer type for better usage purpose and junit testing purpose 
 instead of void.
+
 3.In future customer data can be extended to other attributes or scale.
+
 4.Junit tests are covered for adapter implementation, 2 concrete classes and also to customer class.
+
+Git Repo Link :https://github.com/metcs/met-cs665-assignment-4-Lakshmi-Swethadri0201.git
 
 # Project Template
 
